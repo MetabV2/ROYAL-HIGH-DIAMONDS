@@ -307,8 +307,10 @@ local function ZGKXN_fake_script() -- Button2.METAB SCRIPT
 	
 		
 		for i,v in pairs(workspace:GetDescendants()) do
-			if v:IsA("Model") then
-				v:Destroy()
+if v:IsA("Model") then
+v:Destroy()
+end
+end
 			
 		
 		wait(1)
@@ -321,8 +323,7 @@ local function ZGKXN_fake_script() -- Button2.METAB SCRIPT
 				wait(0.2)
 			end
 				end
-			end
-		end
+	
 		end)
 	
 	
