@@ -306,14 +306,10 @@ local function ZGKXN_fake_script() -- Button2.METAB SCRIPT
 	script.Parent.MouseButton1Down:connect(function()
 	
 		
-		for i,v in pairs(workspace:GetDescendants()) do
-if v:IsA("Model") then
-v:Destroy()
-end
-end
+
 			
 		
-		wait(1)
+	
 	
 		_G.Bin = true
 		while _G.Bin do
@@ -322,7 +318,13 @@ end
 				UwU.CFrame = v.CFrame
 				wait(0.2)
 			end
-				end
+		end
+			wait(1)
+					for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("Model") then
+v:Destroy()
+end
+end
 	
 		end)
 	
