@@ -1,3 +1,7 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local InsertedObjects = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
@@ -10,6 +14,11 @@ local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local UIGradient_2 = Instance.new("UIGradient")
 local BtnText = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
+local Button2_2 = Instance.new("ImageButton")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UIGradient_3 = Instance.new("UIGradient")
+local BtnText_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
 local ImageLabel_2 = Instance.new("ImageLabel")
 
 --Properties:
@@ -56,8 +65,8 @@ Button2.Parent = ImageLabel
 Button2.AnchorPoint = Vector2.new(1, 1)
 Button2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Button2.BackgroundTransparency = 1.000
-Button2.Position = UDim2.new(0.657450557, 0, 0.786049426, 0)
-Button2.Size = UDim2.new(0.505417228, 0, 0.400402635, 0)
+Button2.Position = UDim2.new(0.725834072, 0, 0.709713519, 0)
+Button2.Size = UDim2.new(0.188098013, 0, 0.291955411, 0)
 Button2.Image = "rbxassetid://2790382281"
 Button2.ImageColor3 = Color3.fromRGB(26, 190, 190)
 Button2.SliceCenter = Rect.new(4, 4, 252, 252)
@@ -76,16 +85,52 @@ BtnText.AnchorPoint = Vector2.new(0.5, 0.5)
 BtnText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 BtnText.BackgroundTransparency = 1.000
 BtnText.BorderSizePixel = 0
-BtnText.Position = UDim2.new(0.502128243, 0, 0.518141031, 0)
-BtnText.Size = UDim2.new(1.20898569, -5, 0.495961368, -5)
+BtnText.Position = UDim2.new(0.49917081, 0, 0.649619818, 0)
+BtnText.Size = UDim2.new(1.29730463, -5, 0.796085536, -5)
 BtnText.Font = Enum.Font.LuckiestGuy
-BtnText.Text = "INFINITE GEMS"
+BtnText.Text = "2"
 BtnText.TextColor3 = Color3.fromRGB(255, 255, 255)
 BtnText.TextScaled = true
 BtnText.TextSize = 14.000
 BtnText.TextWrapped = true
 
 UICorner.Parent = Button2
+
+Button2_2.Name = "Button 2"
+Button2_2.Parent = ImageLabel
+Button2_2.AnchorPoint = Vector2.new(1, 1)
+Button2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button2_2.BackgroundTransparency = 1.000
+Button2_2.Position = UDim2.new(0.487265468, 0, 0.709713519, 0)
+Button2_2.Size = UDim2.new(0.188098013, 0, 0.291955411, 0)
+Button2_2.Image = "rbxassetid://2790382281"
+Button2_2.ImageColor3 = Color3.fromRGB(26, 190, 190)
+Button2_2.SliceCenter = Rect.new(4, 4, 252, 252)
+
+UIAspectRatioConstraint_3.Parent = Button2_2
+UIAspectRatioConstraint_3.AspectRatio = 3.042
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(30, 231, 231)), ColorSequenceKeypoint.new(0.94, Color3.fromRGB(23, 179, 179)), ColorSequenceKeypoint.new(0.97, Color3.fromRGB(33, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 231, 231))}
+UIGradient_3.Offset = Vector2.new(-0.349999994, 0)
+UIGradient_3.Rotation = -135
+UIGradient_3.Parent = Button2_2
+
+BtnText_2.Name = "BtnText"
+BtnText_2.Parent = Button2_2
+BtnText_2.AnchorPoint = Vector2.new(0.5, 0.5)
+BtnText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BtnText_2.BackgroundTransparency = 1.000
+BtnText_2.BorderSizePixel = 0
+BtnText_2.Position = UDim2.new(0.49917081, 0, 0.649619818, 0)
+BtnText_2.Size = UDim2.new(1.29730463, -5, 0.796085536, -5)
+BtnText_2.Font = Enum.Font.LuckiestGuy
+BtnText_2.Text = "1"
+BtnText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BtnText_2.TextScaled = true
+BtnText_2.TextSize = 14.000
+BtnText_2.TextWrapped = true
+
+UICorner_2.Parent = Button2_2
 
 ImageLabel_2.Parent = InsertedObjects
 ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -97,7 +142,7 @@ ImageLabel_2.ScaleType = Enum.ScaleType.Tile
 
 -- Scripts:
 
-local function HRLRJSQ_fake_script() -- ImageButton.LocalScript 
+local function OOJO_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -105,8 +150,8 @@ local function HRLRJSQ_fake_script() -- ImageButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(HRLRJSQ_fake_script)()
-local function MSGYOQ_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(OOJO_fake_script)()
+local function XAFF_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	
@@ -184,8 +229,8 @@ local function MSGYOQ_fake_script() -- ImageLabel.LocalScript
 	
 	
 end
-coroutine.wrap(MSGYOQ_fake_script)()
-local function PINRSEC_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(XAFF_fake_script)()
+local function FHEMV_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	while true do
@@ -203,16 +248,16 @@ local function PINRSEC_fake_script() -- ImageLabel.LocalScript
 		wait(.7)
 	end
 end
-coroutine.wrap(PINRSEC_fake_script)()
-local function MZWADPP_fake_script() -- CloseButton.LocalScript 
+coroutine.wrap(FHEMV_fake_script)()
+local function VCNECN_fake_script() -- CloseButton.LocalScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(MZWADPP_fake_script)()
-local function YBWF_fake_script() -- CloseButton.ANIME 
+coroutine.wrap(VCNECN_fake_script)()
+local function PMMGWT_fake_script() -- CloseButton.ANIME 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	local btn = script.Parent
@@ -255,8 +300,8 @@ local function YBWF_fake_script() -- CloseButton.ANIME
 		end
 	end)
 end
-coroutine.wrap(YBWF_fake_script)()
-local function TXJVCP_fake_script() -- Button2.ANIME 
+coroutine.wrap(PMMGWT_fake_script)()
+local function NNBVCRT_fake_script() -- Button2.ANIME 
 	local script = Instance.new('LocalScript', Button2)
 
 	local btn = script.Parent
@@ -299,18 +344,12 @@ local function TXJVCP_fake_script() -- Button2.ANIME
 		end
 	end)
 end
-coroutine.wrap(TXJVCP_fake_script)()
-local function ZGKXN_fake_script() -- Button2.METAB SCRIPT 
+coroutine.wrap(NNBVCRT_fake_script)()
+local function XXEMU_fake_script() -- Button2.METAB SCRIPT 
 	local script = Instance.new('LocalScript', Button2)
 
 	script.Parent.MouseButton1Down:connect(function()
-	
 		
-
-			
-		
-	
-	
 		_G.Bin = true
 		while _G.Bin do
 			local UwU = game.Players.LocalPlayer.Character.HumanoidRootPart
@@ -319,13 +358,6 @@ local function ZGKXN_fake_script() -- Button2.METAB SCRIPT
 				wait(0.2)
 			end
 		end
-			wait(1)
-					for i,v in pairs(workspace:GetDescendants()) do
-if v:IsA("Model") then
-v:Destroy()
-end
-end
-	
 		end)
 	
 	
@@ -336,12 +368,80 @@ end
 	
 	
 	
+	
 end
-coroutine.wrap(ZGKXN_fake_script)()
-local function JBCE_fake_script() -- ImageLabel_2.Script 
+coroutine.wrap(XXEMU_fake_script)()
+local function TBOXZ_fake_script() -- Button2_2.ANIME 
+	local script = Instance.new('LocalScript', Button2_2)
+
+	local btn = script.Parent
+	local uiGradient = btn:WaitForChild("UIGradient")
+	
+	local isHovering = false
+	
+	local tweenService = game:GetService("TweenService")
+	local tweenInfo = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.InOut)
+	
+	local gradientRestoreTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(-0.35, 0)})
+	local gradientAddTween = tweenService:Create(uiGradient, tweenInfo, {Offset = Vector2.new(1, 0)})
+	
+	
+	btn.MouseEnter:Connect(function()
+		
+		isHovering = true
+		
+		gradientAddTween:Play()
+	end)
+	
+	btn.MouseLeave:Connect(function()
+		
+		isHovering = false
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Down:Connect(function()
+		
+		gradientRestoreTween:Play()
+	end)
+	
+	btn.MouseButton1Up:Connect(function()
+		
+		if not isHovering then
+			gradientRestoreTween:Play()
+		else
+			gradientAddTween:Play()
+		end
+	end)
+end
+coroutine.wrap(TBOXZ_fake_script)()
+local function NNIMUYY_fake_script() -- Button2_2.METAB SCRIPT 
+	local script = Instance.new('LocalScript', Button2_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		
+		for i,v in pairs(game.workspace:GetDescendants()) do
+			if v:IsA("Model") then
+				v:Destroy()
+			end
+		end
+		end)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+end
+coroutine.wrap(NNIMUYY_fake_script)()
+local function KBRJUPO_fake_script() -- ImageLabel_2.Script 
 	local script = Instance.new('Script', ImageLabel_2)
 
 	wait(4)
 	script.Parent:Destroy()
 end
-coroutine.wrap(JBCE_fake_script)()
+coroutine.wrap(KBRJUPO_fake_script)()
