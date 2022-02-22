@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
 
 local InsertedObjects = Instance.new("ScreenGui")
 local ImageButton = Instance.new("ImageButton")
@@ -330,7 +327,26 @@ local function LQAIB_fake_script() -- Button2.METAB SCRIPT
 	
 	
 	
-		game:GetService("Players").LocalPlayer.PlayerGui.CaptchaGui:Destroy()
+		if bypassCaptcha then
+       plr.PlayerGui.CaptchaGui:GetPropertyChangedSignal("Enabled"):Connect(function()
+           wait(1)
+           if plr.PlayerGui.CaptchaGui.Enabled then
+               for i,v in pairs(plr.PlayerGui.CaptchaGui.Captcha.FloatArea:GetChildren()) do
+                   local absolute = v.AbsoluteSize.X
+                   wait(.1)
+                   if absolute ~= v.AbsoluteSize.X then
+                       for i,v in pairs(getconnections(v.MouseButton1Click)) do
+                           v:Fire()
+                       end
+                       wait(.01)
+                       v:Destroy()
+                   end
+               end
+               plr.PlayerGui.CaptchaGui.PopupMessage.Visible = false
+               plr.PlayerGui.CaptchaGui.Enabled = false
+           end
+       end)
+   end
 	end)
 	
 	
